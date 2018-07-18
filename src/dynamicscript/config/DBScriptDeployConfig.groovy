@@ -46,18 +46,30 @@ class DBScriptDeployConfig extends AbstractDBScriptDeployConfig {
 
         addDatabaseConfig("DBServer6","172.16.41.20", "template1", "postgres", "suneeedba", "5432","翌能预发布服务器172.16.41.20:5432","1");//翌能预发布
 
+        addDatabaseConfig("DBServer7","10.1.11.91", "template1", "postgres", "suneeedba", "5432","大宗预发布服务器10.1.11.91:5432","1");//大宗预发布
+        addDatabaseConfig("DBServer8","10.1.11.91", "template1", "postgres", "suneeedba", "5434","大宗预发布服务器10.1.11.91:5434","1");//大宗预发布
 
-        addDatabaseConfig("DBServer7","172.16.41.26", "template1", "postgres", "suneeedba", "5433","翌能生产服务器172.16.41.26:5433","2");//翌能生产
-        addDatabaseConfig("DBServer8","172.16.41.24", "template1", "postgres", "suneeedba", "5433","翌能生产服务器172.16.41.24:5433","2");//翌能生产
+        addDatabaseConfig("DBServer9","10.0.253.154", "template1", "postgres", "suneeedba", "5440","翌超预发布服务器10.0.253.154:5440","1");//翌超预发布
+        addDatabaseConfig("DBServer10","10.0.253.154", "template1", "postgres", "suneeedba", "5441","翌超预发布服务器10.0.253.154:5441","1");//翌超预发布
 
-        addDatabaseConfig("DBServer9","172.16.54.73", "template1", "postgres", "suneeedba", "5434","大宗生产服务器172.16.54.73:5434","2");//大宗生产
-        addDatabaseConfig("DBServer10","172.16.54.72", "template1", "postgres", "suneeedba", "5432","大宗生产服务器172.16.54.72:5432","2");//大宗生产
 
-        addDatabaseConfig("DBServer11","172.16.51.12", "template1", "postgres", "suneeedba", "5433","宁家生产服务器172.16.51.12:5433","2");//宁家生产
-        addDatabaseConfig("DBServer12","172.16.51.11", "template1", "postgres", "suneeedba", "5433","宁家生产服务器172.16.51.11:5433","2");//宁家生产
+        addDatabaseConfig("DBServer11","172.16.41.26", "template1", "postgres", "suneeedba", "5433","翌能生产服务器172.16.41.26:5433","2");//翌能生产
+        addDatabaseConfig("DBServer12","172.16.41.24", "template1", "postgres", "suneeedba", "5433","翌能生产服务器172.16.41.24:5433","2");//翌能生产
 
-        addDatabaseConfig("DBServer13","172.16.54.10", "template1", "postgres", "suneeedba", "5440","翌捷生产服务器172.16.54.10:5440","2");//翌捷生产
-        addDatabaseConfig("DBServer14","172.16.54.11", "template1", "postgres", "suneeedba", "5441","翌捷生产服务器172.16.54.11:5441","2");//翌捷生产
+        addDatabaseConfig("DBServer13","172.16.54.73", "template1", "postgres", "suneeedba", "5434","大宗生产服务器172.16.54.73:5434","2");//大宗生产
+        addDatabaseConfig("DBServer14","172.16.54.72", "template1", "postgres", "suneeedba", "5432","大宗生产服务器172.16.54.72:5432","2");//大宗生产
+
+        addDatabaseConfig("DBServer15","172.16.51.12", "template1", "postgres", "suneeedba", "5433","宁家生产服务器172.16.51.12:5433","2");//宁家生产
+        addDatabaseConfig("DBServer16","172.16.51.11", "template1", "postgres", "suneeedba", "5433","宁家生产服务器172.16.51.11:5433","2");//宁家生产
+
+        addDatabaseConfig("DBServer17","172.16.54.10", "template1", "postgres", "suneeedba", "5440","翌捷生产服务器172.16.54.10:5440","2");//翌捷生产
+        addDatabaseConfig("DBServer18","172.16.54.11", "template1", "postgres", "suneeedba", "5441","翌捷生产服务器172.16.54.11:5441","2");//翌捷生产
+
+        addDatabaseConfig("DBServer19","172.16.54.72", "template1", "postgres", "suneeedba", "5432","大宗生产服务器172.16.54.72:5432","2");//大宗生产
+        addDatabaseConfig("DBServer20","172.16.54.73", "template1", "postgres", "suneeedba", "5434","大宗生产服务器172.16.54.73:5434","2");//大宗生产
+
+        addDatabaseConfig("DBServer21","10.6.251.26", "template1", "postgres", "suneeedba", "5440","翌超生产服务器10.6.251.26:5440","2");//大宗生产
+        addDatabaseConfig("DBServer22","10.6.251.26", "template1", "postgres", "suneeedba", "5441","翌超生产服务器10.6.251.26:5441","2");//大宗生产
 
 
         /**********数据库服务器的配置信息 ( end ) **************************************************/

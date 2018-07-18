@@ -114,7 +114,7 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(3, "supplier", "供应商管理(vr-bk-common-supplier)", "rest", "http://172.16.36.69:8081/deploy/vr-bk-common/supplier/rest/v1.0.0/40889/8125/test/172.16.53.8/172.16.44.18", "");
         addModuleDeployURL(3, "supplier", "供应商管理(vr-bk-common-supplier)", "provider", "http://172.16.36.69:8081/deploy/vr-bk-common/supplier/provider/v1.0.0/20889/20889/test/172.16.53.8/host", "");
 
-        //4:大米商城
+        //4:翌捷
         addModuleDeployURL(4, "system", "系统管理(supplychain-common-system)", "rest", "", "");
         addModuleDeployURL(4, "system", "系统管理(supplychain-common-system)", "provider", "", "");
         addModuleDeployURL(4, "base", "基础资源(supplychain-common-base)", "rest", "", "");
@@ -139,6 +139,35 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(4, "wholesale", "批发管理(supplychain-common-wholesale)", "provider", "", "");
         addModuleDeployURL(4, "storage", "仓储管理(supplychain-common-storage)", "rest", "", "");
         addModuleDeployURL(4, "storage", "仓储管理(supplychain-common-storage)", "provider", "", "");
+
+
+
+        //5:翌超
+        addModuleDeployURL(5, "system", "系统管理(yichao-common-system)", "rest", "", "");
+        addModuleDeployURL(5, "system", "系统管理(yichao-common-system)", "provider", "", "");
+        addModuleDeployURL(5, "base", "基础资源(yichao-common-base)", "rest", "", "");
+        addModuleDeployURL(5, "base", "基础资源(yichao-common-base)", "provider", "", "");
+        addModuleDeployURL(5, "contract", "合同管理(yichao-common-contract)", "rest", "", "");
+        addModuleDeployURL(5, "contract", "合同管理(yichao-common-contract)", "provider", "", "");
+        addModuleDeployURL(5, "finance", "财务管理(yichao-common-finance)", "rest", "", "");
+        addModuleDeployURL(5, "finance", "财务管理(yichao-common-finance)", "provider", "", "");
+        addModuleDeployURL(5, "reportform", "报表管理(yichao-common-reportform)", "rest", "", "");
+        addModuleDeployURL(5, "reportform", "报表管理(yichao-common-reportform)", "provider", "", "");
+        addModuleDeployURL(5, "goods", "商品管理(yichao-common-goods)", "rest", "", "");
+        addModuleDeployURL(5, "goods", "商品管理(yichao-common-goods)", "provider", "", "");
+        addModuleDeployURL(5, "purchase", "采购管理(yichao-common-purchase)", "rest", "", "");
+        addModuleDeployURL(5, "purchase", "采购管理(yichao-common-purchase)", "provider", "", "");
+        addModuleDeployURL(5, "sale", "零售管理(yichao-common-sale)", "rest", "", "");
+        addModuleDeployURL(5, "sale", "零售管理(yichao-common-sale)", "provider", "", "");
+        addModuleDeployURL(5, "supplier", "供应商管理(yichao-common-supplier)", "rest", "", "");
+        addModuleDeployURL(5, "supplier", "供应商管理(yichao-common-supplier)", "provider", "", "");
+        addModuleDeployURL(5, "kitchen", "后厨管理(yichao-common-kitchen)", "rest", "", "");
+        addModuleDeployURL(5, "kitchen", "后厨管理(yichao-common-kitchen)", "provider", "", "");
+        addModuleDeployURL(5, "wholesale", "批发管理(yichao-common-wholesale)", "rest", "", "");
+        addModuleDeployURL(5, "wholesale", "批发管理(yichao-common-wholesale)", "provider", "", "");
+        addModuleDeployURL(5, "storage", "仓储管理(yichao-common-storage)", "rest", "", "");
+        addModuleDeployURL(5, "storage", "仓储管理(yichao-common-storage)", "provider", "", "");
+
         /**********配置模块发布的URL (end) **************************************************/
 
         /**********配置测试环境的日志URL (begin) **************************************************/
