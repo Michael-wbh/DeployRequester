@@ -530,12 +530,16 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         //addAllowedIpConfig("172.19.14.236", Config.MARK_PRODUCT_DEPLOY);    //正卯
         addAllowedIpConfig("172.19.14.247", Config.MARK_PRODUCT_DEPLOY);    //恒砺
         addAllowedIpConfig("172.19.14.182", Config.MARK_PRODUCT_DEPLOY);    //思行
+        addAllowedIpConfig("172.19.14.164", Config.MARK_PRODUCT_DEPLOY);    //元吉
+        addAllowedIpConfig("172.19.14.212", Config.MARK_PRODUCT_DEPLOY);    //承宇
 
         //锁定发布申请的权限配置
         //addAllowedIpConfig("172.19.14.144", Config.LOCK_DEPLOY_REQUEST);
        // addAllowedIpConfig("172.19.14.236", Config.LOCK_DEPLOY_REQUEST);    //正卯
         addAllowedIpConfig("172.19.14.247", Config.LOCK_DEPLOY_REQUEST);    //恒砺
         addAllowedIpConfig("172.19.14.182", Config.LOCK_DEPLOY_REQUEST);    //思行
+        addAllowedIpConfig("172.19.14.164", Config.LOCK_DEPLOY_REQUEST);    //元吉
+        addAllowedIpConfig("172.19.14.212", Config.LOCK_DEPLOY_REQUEST);    //承宇
 
 
         //审核执行应用发布到测试环境的权限配置

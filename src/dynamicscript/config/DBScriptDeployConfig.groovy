@@ -15,23 +15,29 @@ class DBScriptDeployConfig extends AbstractDBScriptDeployConfig {
         Log4jUtil.info(logger, "加载DBScriptDeployConfig.groovy...");
 
         //发布数据库脚本到预发和生产的权限配置
-        addAllowedIpConfig("172.19.14.144", Config.DEPLOY_DBSCRIPT);
-        addAllowedIpConfig("172.19.14.236", Config.DEPLOY_DBSCRIPT);        //正卯
-        addAllowedIpConfig("172.19.14.202", Config.DEPLOY_DBSCRIPT);        //淡然
+        //addAllowedIpConfig("172.19.14.144", Config.DEPLOY_DBSCRIPT);
+        //addAllowedIpConfig("172.19.14.236", Config.DEPLOY_DBSCRIPT);        //正卯
+       // addAllowedIpConfig("172.19.14.202", Config.DEPLOY_DBSCRIPT);        //淡然
         addAllowedIpConfig("172.19.14.247", Config.DEPLOY_DBSCRIPT);        //恒砺
         addAllowedIpConfig("172.19.14.182", Config.DEPLOY_DBSCRIPT);        //思行
+        addAllowedIpConfig("172.19.14.164", Config.DEPLOY_DBSCRIPT);    //元吉
+        addAllowedIpConfig("172.19.14.212", Config.DEPLOY_DBSCRIPT);    //承宇
 
         //生成数据库脚本文件的权限配置
-        addAllowedIpConfig("172.19.14.144", Config.GENERATE_DBSCRIPT_FILE);
-        addAllowedIpConfig("172.19.14.236", Config.GENERATE_DBSCRIPT_FILE);        //正卯
+        //addAllowedIpConfig("172.19.14.144", Config.GENERATE_DBSCRIPT_FILE);
+        //addAllowedIpConfig("172.19.14.236", Config.GENERATE_DBSCRIPT_FILE);        //正卯
         addAllowedIpConfig("172.19.14.247", Config.GENERATE_DBSCRIPT_FILE);        //恒砺
         addAllowedIpConfig("172.19.14.182", Config.GENERATE_DBSCRIPT_FILE);        //思行
+        addAllowedIpConfig("172.19.14.164", Config.GENERATE_DBSCRIPT_FILE);    //元吉
+        addAllowedIpConfig("172.19.14.212", Config.GENERATE_DBSCRIPT_FILE);    //承宇
 
         //修改是否可以随时发布脚本的权限配置
-        addAllowedIpConfig("172.19.14.144", Config.CHANGE_CAN_EXEC_DBSCRIPT);
-        addAllowedIpConfig("172.19.14.236", Config.CHANGE_CAN_EXEC_DBSCRIPT);        //正卯
+        //addAllowedIpConfig("172.19.14.144", Config.CHANGE_CAN_EXEC_DBSCRIPT);
+        //addAllowedIpConfig("172.19.14.236", Config.CHANGE_CAN_EXEC_DBSCRIPT);        //正卯
         addAllowedIpConfig("172.19.14.247", Config.CHANGE_CAN_EXEC_DBSCRIPT);        //恒砺
         addAllowedIpConfig("172.19.14.182", Config.CHANGE_CAN_EXEC_DBSCRIPT);        //思行
+        addAllowedIpConfig("172.19.14.164", Config.CHANGE_CAN_EXEC_DBSCRIPT);    //元吉
+        addAllowedIpConfig("172.19.14.212", Config.CHANGE_CAN_EXEC_DBSCRIPT);    //承宇
 
 
 
