@@ -168,6 +168,11 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(5, "storage", "仓储管理(yichao-common-storage)", "rest", "", "");
         addModuleDeployURL(5, "storage", "仓储管理(yichao-common-storage)", "provider", "", "");
 
+        //5:翌超分销商城
+        addModuleDeployURL(6, "distributionmall", "分销商城(yichao-distributionmall)", "rest", "", "");
+        addModuleDeployURL(6, "distributionmall", "分销商城(yichao-distributionmall)", "provider", "", "");
+
+
         /**********配置模块发布的URL (end) **************************************************/
 
         /**********配置测试环境的日志URL (begin) **************************************************/

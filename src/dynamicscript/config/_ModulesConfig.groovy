@@ -19,6 +19,7 @@ class _ModulesConfig extends AbstractModulesConfig {
         addProject(3, "大宗交易");
         addProject(4, "翌捷");
         addProject(5, "翌超");
+        addProject(6, "分销商城");
         /**********配置项目 ( end ) **************************************************/
 
         /**********配置模块 (begin) **************************************************/
