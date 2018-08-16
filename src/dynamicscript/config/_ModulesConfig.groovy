@@ -45,6 +45,7 @@ class _ModulesConfig extends AbstractModulesConfig {
         addModule(Short.valueOf("20"), "bkstorage", "大宗交易仓储管理");
         addModule(Short.valueOf("21"), "bkreportform", "大宗交易报表模块");
         addModule(Short.valueOf("22"), "distributionmall", "翌超分销商城");
+        addModule(Short.valueOf("23"), "configcenter", "mq配置");
         /**********配置模块 ( end ) **************************************************/
 
         /**********配置模块类型 (begin) **************************************************/

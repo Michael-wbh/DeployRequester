@@ -46,6 +46,9 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(1, "wholesale", "批发管理(vr-wholesale)", "provider", "http://172.16.36.69:8080/deploy/wholesale/provider/habjZOqHMFg1425Z", "http://172.16.36.69:8080/produceDeploy/wholesale/provider/DAXtC80JSV5oK2xw");
         addModuleDeployURL(1, "storage", "仓储管理(vr-storage)", "rest", "http://172.16.36.69:8080/deploy/storage/rest/habjZOqHMFg1425Z", "http://172.16.36.69:8080/produceDeploy/storage/rest/DAXtC80JSV5oK2xw");
         addModuleDeployURL(1, "storage", "仓储管理(vr-storage)", "provider", "http://172.16.36.69:8080/deploy/storage/provider/habjZOqHMFg1425Z", "http://172.16.36.69:8080/produceDeploy/storage/provider/DAXtC80JSV5oK2xw");
+        addModuleDeployURL(1, "configcenter", "mq配置", "rest", "", "");
+        addModuleDeployURL(1, "configcenter", "mq配置", "provider", "", "");
+
 
         //2:宁家
         addModuleDeployURL(2, "system", "系统管理(vr-wnnj-system)", "rest", "http://172.16.36.69:8081/deploy/vr-wnnj/system/rest/v1.0.0/30917/8000/test/172.16.44.16/172.16.44.16", "");
@@ -76,6 +79,9 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(2, "wholesale", "批发管理(vr-wnnj-wholesale)", "provider", "http://172.16.36.69:8081/deploy/vr-wnnj/wholesale/provider/v1.0.0/20890/20890/test/172.16.44.16/host", "");
         addModuleDeployURL(2, "storage", "仓储管理(vr-wnnj-storage)", "rest", "http://172.16.36.69:8081/deploy/vr-wnnj/storage/rest/v1.0.0/40891/8111/test/172.16.44.16/172.16.44.16", "");
         addModuleDeployURL(2, "storage", "仓储管理(vr-wnnj-storage)", "provider", "http://172.16.36.69:8081/deploy/vr-wnnj/storage/provider/v1.0.0/20891/20891/test/172.16.44.16/host", "");
+        addModuleDeployURL(2, "configcenter", "mq配置", "rest", "", "");
+        addModuleDeployURL(2, "configcenter", "mq配置", "provider", "", "");
+
 
         //3:大宗交易
         addModuleDeployURL(3, "bkcontract", "大宗交易合同管理(vr-bulkstock-contract)", "rest", "http://172.16.36.69:8081/deploy/vr-bulkstock/contract/rest/v1.0.0/35001/35001/test/172.16.36.71/172.16.44.18", "");
@@ -113,6 +119,9 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(3, "storage", "仓储管理(vr-bk-common-storage)", "provider", "http://172.16.36.69:8081/deploy/vr-bk-common/storage/provider/v1.0.0/20891/20891/test/172.16.53.8/host", "");
         addModuleDeployURL(3, "supplier", "供应商管理(vr-bk-common-supplier)", "rest", "http://172.16.36.69:8081/deploy/vr-bk-common/supplier/rest/v1.0.0/40889/8125/test/172.16.53.8/172.16.44.18", "");
         addModuleDeployURL(3, "supplier", "供应商管理(vr-bk-common-supplier)", "provider", "http://172.16.36.69:8081/deploy/vr-bk-common/supplier/provider/v1.0.0/20889/20889/test/172.16.53.8/host", "");
+        addModuleDeployURL(3, "configcenter", "mq配置", "rest", "", "");
+        addModuleDeployURL(3, "configcenter", "mq配置", "provider", "", "");
+
 
         //4:翌捷
         addModuleDeployURL(4, "system", "系统管理(supplychain-common-system)", "rest", "", "");
@@ -139,7 +148,8 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(4, "wholesale", "批发管理(supplychain-common-wholesale)", "provider", "", "");
         addModuleDeployURL(4, "storage", "仓储管理(supplychain-common-storage)", "rest", "", "");
         addModuleDeployURL(4, "storage", "仓储管理(supplychain-common-storage)", "provider", "", "");
-
+        addModuleDeployURL(4, "configcenter", "mq配置", "rest", "", "");
+        addModuleDeployURL(4, "configcenter", "mq配置", "provider", "", "");
 
 
         //5:翌超
@@ -167,10 +177,14 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(5, "wholesale", "批发管理(yichao-common-wholesale)", "provider", "", "");
         addModuleDeployURL(5, "storage", "仓储管理(yichao-common-storage)", "rest", "", "");
         addModuleDeployURL(5, "storage", "仓储管理(yichao-common-storage)", "provider", "", "");
+        addModuleDeployURL(5, "configcenter", "mq配置", "rest", "", "");
+        addModuleDeployURL(5, "configcenter", "mq配置", "provider", "", "");
 
         //5:翌超分销商城
         addModuleDeployURL(6, "distributionmall", "分销商城(yichao-distributionmall)", "rest", "", "");
         addModuleDeployURL(6, "distributionmall", "分销商城(yichao-distributionmall)", "provider", "", "");
+        //addModuleDeployURL(6, "configcenter", "mq配置", "rest", "", "");
+        //addModuleDeployURL(6, "configcenter", "mq配置", "provider", "", "");
 
 
         /**********配置模块发布的URL (end) **************************************************/
