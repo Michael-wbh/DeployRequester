@@ -100,6 +100,11 @@ public class DeployDbscriptController extends CommonMethodWrapper {
                     return result;
                 }
             }
+            if (hasSequenceStatement(seperatedStatementList)) {
+                result = JsonResult.createFailed("the Sql includes sequence");
+                result.addData("含有创建序列语句，已不允许使用序列,请去掉这种语句。");
+                return result;
+            }
 
             String signedString = MD5Util.signSqls(seperatedStatementList, "utf-8");
             deployDbscriptDO.setSqlmd5(signedString);
@@ -484,7 +489,11 @@ public class DeployDbscriptController extends CommonMethodWrapper {
                         return result;
                     }
                 }
-
+                if (hasSequenceStatement(seperatedStatementList)) {
+                    result = JsonResult.createFailed("the Sql includes sequence");
+                    result.addData("含有创建序列语句，已不允许使用序列,请去掉这种语句。");
+                    return result;
+                }
                 //删除未执行的sql
                 int deleteUnexecutedSuccessCount = deployDbscriptDetailsqlService.deleteUnexecutedByDeployDbscriptId(deployDbscriptId);
 
@@ -572,7 +581,11 @@ public class DeployDbscriptController extends CommonMethodWrapper {
                         return result;
                     }
                 }
-
+                if (hasSequenceStatement(seperatedStatementList)) {
+                    result = JsonResult.createFailed("the Sql includes sequence");
+                    result.addData("含有创建序列语句，已不允许使用序列,请去掉这种语句。");
+                    return result;
+                }
                 //删除未执行的sql
                 int deleteUnexecutedSuccessCount = deployDbscriptSyncDetailsqlService.deleteUnexecutedByDeployDbscriptId(deployDbscriptId);
 
@@ -1294,6 +1307,26 @@ public class DeployDbscriptController extends CommonMethodWrapper {
             sql = sql.toLowerCase();
             if (sql.startsWith("drop ") || sql.startsWith("delete ")) {
                 return true;
+            }
+        }
+        return false;
+    }
+    /**
+     * 判断是否有创建序列在里面。如果有则返回true，否则返回false。
+     * @param seperatedStatementList
+     * @return
+     */
+    private boolean hasSequenceStatement(List<String> seperatedStatementList) {
+        if (seperatedStatementList == null) {
+            return false;
+        }
+        for (String sql : seperatedStatementList) {
+            sql = sql.toLowerCase().trim();
+            if (sql.startsWith("create")) {
+               String sqlTmp  =sql.replace("create","");
+                if (sqlTmp.trim().startsWith("sequence")){
+                    return true;
+                }
             }
         }
         return false;
