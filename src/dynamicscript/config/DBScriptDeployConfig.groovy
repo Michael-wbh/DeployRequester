@@ -22,6 +22,8 @@ class DBScriptDeployConfig extends AbstractDBScriptDeployConfig {
         addAllowedIpConfig("172.19.14.182", Config.DEPLOY_DBSCRIPT);        //思行
         addAllowedIpConfig("172.19.14.164", Config.DEPLOY_DBSCRIPT);    //元吉
         addAllowedIpConfig("172.19.14.212", Config.DEPLOY_DBSCRIPT);    //承宇
+        addAllowedIpConfig("172.19.14.218", Config.DEPLOY_DBSCRIPT);    //子牧
+
 
         //生成数据库脚本文件的权限配置
         //addAllowedIpConfig("172.19.14.144", Config.GENERATE_DBSCRIPT_FILE);
@@ -30,6 +32,7 @@ class DBScriptDeployConfig extends AbstractDBScriptDeployConfig {
         addAllowedIpConfig("172.19.14.182", Config.GENERATE_DBSCRIPT_FILE);        //思行
         addAllowedIpConfig("172.19.14.164", Config.GENERATE_DBSCRIPT_FILE);    //元吉
         addAllowedIpConfig("172.19.14.212", Config.GENERATE_DBSCRIPT_FILE);    //承宇
+        addAllowedIpConfig("172.19.14.218", Config.GENERATE_DBSCRIPT_FILE);    //子牧
 
         //修改是否可以随时发布脚本的权限配置
         //addAllowedIpConfig("172.19.14.144", Config.CHANGE_CAN_EXEC_DBSCRIPT);
@@ -38,6 +41,7 @@ class DBScriptDeployConfig extends AbstractDBScriptDeployConfig {
         addAllowedIpConfig("172.19.14.182", Config.CHANGE_CAN_EXEC_DBSCRIPT);        //思行
         addAllowedIpConfig("172.19.14.164", Config.CHANGE_CAN_EXEC_DBSCRIPT);    //元吉
         addAllowedIpConfig("172.19.14.212", Config.CHANGE_CAN_EXEC_DBSCRIPT);    //承宇
+        addAllowedIpConfig("172.19.14.218", Config.CHANGE_CAN_EXEC_DBSCRIPT);    //子牧
 
 
 
