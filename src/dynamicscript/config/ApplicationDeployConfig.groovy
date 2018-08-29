@@ -48,6 +48,8 @@ class ApplicationDeployConfig extends AbstractApplicationDeployConfig {
         addModuleDeployURL(1, "storage", "≤÷¥¢π‹¿Ì(vr-storage)", "provider", "http://172.16.36.69:8080/deploy/storage/provider/habjZOqHMFg1425Z", "http://172.16.36.69:8080/produceDeploy/storage/provider/DAXtC80JSV5oK2xw");
         addModuleDeployURL(1, "configcenter", "mq≈‰÷√", "rest", "", "");
         addModuleDeployURL(1, "configcenter", "mq≈‰÷√", "provider", "", "");
+        addModuleDeployURL(1, "maintenancemgt", "Œ¨±£", "rest", "", "");
+        addModuleDeployURL(1, "maintenancemgt", "Œ¨±£", "provider", "", "");
 
 
         //2:ƒ˛º“
